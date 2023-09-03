@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation ul a {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+  padding: 20px;
+}

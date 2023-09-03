@@ -1,0 +1,27 @@
+.buttonWrapper a {
+  text-decoration: none;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+.button {
+  padding: 15px 32px;
+  margin-top: 22px;
+  font-size: 16px;
+  background-color: #3b43f2;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.disabledButton {
+  padding: 15px 32px;
+  margin-top: 22px;
+  font-size: 16px;
+  background-color: gray;
+  color: lightgray;
+  border-radius: 50px;
+  border: none;
+  cursor: auto;
+}

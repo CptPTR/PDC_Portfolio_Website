@@ -1,0 +1,41 @@
+.headerWrapper {
+  display: flex;
+  width: 970px;
+  margin: 0 auto;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.logoNav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+  transition: all 0.2s ease;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+}
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #7bcbd4;
+  transform-origin: 0%;
+  transition: all 0.2s ease;
+}
