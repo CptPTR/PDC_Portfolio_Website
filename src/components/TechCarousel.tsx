@@ -5,6 +5,9 @@ import Logo_NextJS from "@/assets/icons/nextjs.svg";
 import Logo_React from "@/assets/icons/react.svg";
 import Logo_TypeScript from "@/assets/icons/typescript.svg";
 import Logo_Vue from "@/assets/icons/vue.svg";
+import Logo_MUI from "@/assets/icons/mui.svg";
+import Logo_Vite from "@/assets/icons/vite.svg";
+import Logo_GraphQL from "@/assets/icons/graphql.svg";
 import styles from "@/styles/TechCarousel.module.css";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
@@ -13,7 +16,7 @@ import Image from "next/image";
 
 const TechCarousel = () => {
   const [emblaRef] = useEmblaCarousel(
-    { loop: false, duration: 25, skipSnaps: true },
+    { loop: false, duration: 5, skipSnaps: true },
     [Autoplay()]
   );
 
@@ -37,25 +40,19 @@ const TechCarousel = () => {
           <Image src={Logo_Vue} alt="VueJS logo" width={100} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_ChakraUI} alt="ChakraUI logo" width={100} />
-        </div>
-        <div className={styles.slide}>
           <Image src={Logo_TypeScript} alt="TypeScript logo" width={100} />
-        </div>
-        <div className={styles.slide}>
-          <Image src={Logo_NextJS} alt="NextJS logo" width={100} />
-        </div>
-        <div className={styles.slide}>
-          <Image src={Logo_React} alt="ReactJS logo" width={100} />
-        </div>
-        <div className={styles.slide}>
-          <Image src={Logo_Vue} alt="VueJS logo" width={100} />
         </div>
         <div className={styles.slide}>
           <Image src={Logo_ChakraUI} alt="ChakraUI logo" width={100} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_TypeScript} alt="TypeScript logo" width={100} />
+          <Image src={Logo_MUI} alt="MaterialUI logo" width={100} />
+        </div>
+        <div className={styles.slide}>
+          <Image src={Logo_Vite} alt="Vite logo" width={100} />
+        </div>
+        <div className={styles.slide}>
+          <Image src={Logo_GraphQL} alt="GraphQL logo" width={100} />
         </div>
       </div>
     </motion.div>
