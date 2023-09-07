@@ -33,7 +33,7 @@ const experiences: {
     business: "BUFFL",
     as: "Internship",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eius a natus placeat nostrum totam quod facere obcaecati eum aperiam, ad dicta? Eaque nostrum impedit quaerat aliquid, animi vero saepe.",
+      "During my voluntary internship at BUFFL, I collaborated with the development and design teams to enhance their landing page. This hands-on experience allowed me to contribute to front-end improvements, work closely with developers and designers, and gain insights into web development and design synergy.",
     logo: BUFFL_Logo,
   },
   {
@@ -41,7 +41,7 @@ const experiences: {
     business: "Minze",
     as: "Tester",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eius a natus placeat nostrum totam quod facere obcaecati eum aperiam, ad dicta? Eaque nostrum impedit quaerat aliquid, animi vero saepe.",
+      "At Minze, I played a role in testing their mobile application and portal application. I utilized Matrix Requirements to conduct comprehensive testing, identify and report bugs, and ensure the quality and functionality of their software products.",
     logo: Minze_Logo,
   },
   {
@@ -49,7 +49,7 @@ const experiences: {
     business: "WoonExpertVlaanderen",
     as: "Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eius a natus placeat nostrum totam quod facere obcaecati eum aperiam, ad dicta? Eaque nostrum impedit quaerat aliquid, animi vero saepe.",
+      "At WoonExpertVlaanderen, I took the lead in designing and developing the front-end of a comprehensive business application. While the backend was powered by Supabase, my focus on the front-end allowed me to create a seamless user experience and interface. This project highlighted my expertise in front-end development and collaboration with backend technologies like Supabase.",
     logo: WEV_Logo,
   },
 ];

@@ -1,5 +1,5 @@
 .experiencesWrapper {
-  height: calc(100dvh - 60px);
+  margin-block: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
