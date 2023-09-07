@@ -15,10 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>{children}</body>
-      <Script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-      />
     </html>
   );
 }
