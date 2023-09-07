@@ -2,18 +2,38 @@
 
 import styles from "@/styles/Project.module.css";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useEffect, useState } from "react";
-import { MdOutlineClose } from "react-icons/md";
 import ProjectCarousel from "./ProjectCarousel";
 
 type ProjectPropTypes = {
-  image: any;
+  frontImage: StaticImageData;
+  carouselImages: StaticImageData[];
+  link: string;
   date: string;
   title: string;
+  time: string;
+  client: string;
+  mainTech: {
+    name: string;
+    logo: any;
+  };
+  type: string;
+  designedBy: string;
 };
 
-const Project: React.FC<ProjectPropTypes> = ({ image, date, title }) => {
+const Project: React.FC<ProjectPropTypes> = ({
+  frontImage,
+  carouselImages,
+  link,
+  date,
+  title,
+  time,
+  client,
+  mainTech,
+  type,
+  designedBy,
+}) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const handleOnProjectClick = () => {
@@ -34,8 +54,15 @@ const Project: React.FC<ProjectPropTypes> = ({ image, date, title }) => {
         <div className={styles.modal}>
           <div className={styles.modalContent}>
             <ProjectCarousel
-              image={image}
+              frontImage={frontImage}
+              carouselImages={carouselImages}
+              link={link}
               title={title}
+              time={time}
+              client={client}
+              mainTech={mainTech}
+              type={type}
+              designedBy={designedBy}
               setModalOpen={setModalOpen}
             />
           </div>
@@ -47,7 +74,7 @@ const Project: React.FC<ProjectPropTypes> = ({ image, date, title }) => {
         onClick={handleOnProjectClick}
       >
         <div className={styles.image}>
-          <Image src={image} alt={title} />
+          <Image src={frontImage} alt={title} />
         </div>
         <motion.div className={styles.info} whileHover={{}}>
           <span className={styles.date}>{date}</span>
