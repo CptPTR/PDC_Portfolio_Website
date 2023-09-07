@@ -32,8 +32,11 @@
   font-size: 60px;
 }
 
-.aboutmeTextContent div p:last-of-type {
+.aboutmeTextContent div p {
   line-height: 24px;
+}
+
+.aboutmeTextContent div:last-of-type {
   height: 216px;
 }
 
