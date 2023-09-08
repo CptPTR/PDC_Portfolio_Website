@@ -242,4 +242,10 @@
   .emblaDots {
     display: none;
   }
+
+  .embla:before,
+  .embla:after {
+    height: calc(100% - 68px - 180px);
+    bottom: 180px;
+  }
 }

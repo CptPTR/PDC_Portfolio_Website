@@ -90,9 +90,17 @@
     width: 100%;
   }
 
+  .heroContent h1 {
+    font-size: 44px;
+  }
+
   .heroPicture img {
-    width: 275px;
-    height: 275px;
-    margin-bottom: 40px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .seeMore p {
+    font-size: 0.7rem;
   }
 }
