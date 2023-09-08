@@ -54,3 +54,18 @@
   align-items: center;
   text-align: center;
 }
+
+@media screen and (max-width: 426px) {
+  .bg {
+    display: none;
+  }
+  .formContent {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 60px 40px;
+  }
+}

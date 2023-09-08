@@ -15,3 +15,14 @@
   margin-top: 12px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 426px) {
+  .footer {
+    padding-inline: 0;
+  }
+
+  .footer p {
+    padding-inline: 50px;
+    text-align: center;
+  }
+}

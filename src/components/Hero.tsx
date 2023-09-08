@@ -80,9 +80,9 @@ const Hero = () => {
               transition={{ delay: 0.4, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              I&apos;m a self-thought Frontend Web/App Developer
-              <br /> looking for a junior position where I can help craft
-              <br /> solid frontend products with great user <br /> experiences.
+              I&apos;m a self-thought Frontend Web/App Developer looking for a
+              junior position where I can help craft solid frontend products
+              with great user experiences.
             </motion.p>
             <motion.div
               className={styles.buttonWrapper}

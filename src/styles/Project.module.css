@@ -48,7 +48,6 @@
   overflow: hidden;
   width: 100%;
 }
-
 .container {
   display: flex;
   width: 550px;
@@ -83,6 +82,16 @@
 
 @media screen and (max-width: 1024px) {
   .modalContent {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .project {
+    width: 100%;
+  }
+
+  .image img {
     width: 100%;
   }
 }

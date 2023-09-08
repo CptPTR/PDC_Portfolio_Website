@@ -210,3 +210,36 @@
   height: 24px;
   fill: #fff;
 }
+
+@media screen and (max-width: 426px) {
+  .modalHeader {
+    padding: 20px;
+  }
+  .modalFooter {
+    height: auto;
+  }
+
+  .projectInfo {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .projectInfo > div {
+    width: 50%;
+    height: 60px;
+    align-items: center;
+  }
+
+  .emblaButtons {
+    transform: translateY(-65px);
+  }
+
+  .emblaButton {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .emblaDots {
+    display: none;
+  }
+}

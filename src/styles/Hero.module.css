@@ -79,3 +79,20 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 426px) {
+  .hero {
+    flex-direction: column-reverse;
+    margin: 0 50px;
+  }
+
+  .heroContent {
+    width: 100%;
+  }
+
+  .heroPicture img {
+    width: 275px;
+    height: 275px;
+    margin-bottom: 40px;
+  }
+}

@@ -60,3 +60,35 @@
 .text {
   font-size: 15px;
 }
+
+@media screen and (max-width: 426px) {
+  .experiencesWrapper {
+    margin-block: 140px;
+  }
+
+  .experiencesContent {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .experiencesTextContent {
+    width: 100%;
+    text-align: start;
+  }
+
+  .experiencesTextContent h1 {
+    font-size: 44px;
+  }
+
+  .businesses {
+    flex-direction: column;
+  }
+
+  .experience {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .experience:nth-child(2) {
+    transform: translateY(0) !important;
+  }
+}

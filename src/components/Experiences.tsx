@@ -91,7 +91,6 @@ const Experiences = () => {
               viewport={{ once: true }}
             >
               I&apos;ve been fortunate to have learned from senior ex-colleagues
-              <br />
               about creating meaningful digital experiences
             </motion.p>
           </div>
