@@ -110,9 +110,10 @@ const Hero = () => {
             <Image
               src={Me}
               alt="Profile picture of Peter De Clercq"
-              width={420}
-              height={420}
+              width={375}
+              height={375}
               style={{
+                marginLeft: "30px",
                 borderRadius: 420,
                 boxShadow: "40px 2px 80px #00000080",
               }}
