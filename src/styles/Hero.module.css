@@ -104,7 +104,7 @@
     margin-bottom: 20px;
   }
 
-  .seeMore p {
-    font-size: 0.7rem;
+  .seeMore {
+    display: none;
   }
 }
