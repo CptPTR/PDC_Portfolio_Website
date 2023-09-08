@@ -86,6 +86,10 @@
     margin: 0 50px;
   }
 
+  .bg {
+    display: none;
+  }
+
   .heroContent {
     width: 100%;
   }
@@ -95,8 +99,8 @@
   }
 
   .heroPicture img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 20px;
   }
 
