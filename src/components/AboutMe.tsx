@@ -186,7 +186,7 @@ const AboutMe = () => {
               <motion.a
                 className={styles.button}
                 whileHover={{ scale: 1.1 }}
-                href="https://drive.google.com/uc?export=download&id=1i0xDKTci6SUYoqeVndAMgkHFMss_9cx0"
+                href="https://drive.google.com/uc?export=download&id=1gZbQSaFjfCFIbnkJBHV6TujI2NEHYlNl"
               >
                 Download CV
               </motion.a>
