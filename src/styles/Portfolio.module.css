@@ -2,43 +2,52 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #3b43f2;
+  background-color: lightseagreen;
 }
 
 .portfolioContent {
-  width: 970px;
+  padding-block: 5rem;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   align-items: flex-start;
   color: #fff;
-  margin-top: 105px;
-  margin-bottom: 70px;
+}
+
+.portfolioTextContent {
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
 .portfolioTextContent h1 {
-  font-size: 60px;
+  font-size: 2rem;
 }
 
 .projects {
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 70px;
+  gap: 2rem;
+  padding-inline: 1rem;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (min-width: 1366px) {
   .portfolioContent {
-    width: 100%;
-    padding: 0 50px;
-  }
-
-  .portfolioContent h1 {
-    font-size: 44px;
+    min-width: 1100px;
+    align-items: center;
   }
 
   .projects {
-    width: 100%;
+    min-width: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

@@ -1,3 +1,7 @@
+.buttonWrapper {
+  text-align: center;
+}
+
 .buttonWrapper a {
   text-decoration: none;
   padding: 15px 32px;
@@ -8,7 +12,7 @@
   padding: 15px 32px;
   margin-top: 22px;
   font-size: 16px;
-  background-color: #3b43f2;
+  background-color: lightseagreen;
   color: #fff;
   border-radius: 50px;
   border: none;

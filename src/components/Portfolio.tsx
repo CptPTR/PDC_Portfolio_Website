@@ -40,21 +40,14 @@ const moramit = Moramit({ src: "./../assets/fonts/Moramit.otf" });
 
 const Portfolio = () => {
   return (
-    <div
-      id="portfolio"
-      style={{
-        scrollMarginTop: "60px",
-      }}
-    >
-      <article className={styles.portfolioWrapper}>
-        <div id="portfolio" className={styles.portfolioContent}>
-          <div className={styles.portfolioTextContent}>
-            <h1 className={moramit.className}>My portfolio</h1>
-            <p>
-              A collection of all my projects created for myself or for real
-              businesses.
-            </p>
-          </div>
+    <article id="portfolio" className={styles.portfolioWrapper}>
+      <div id="portfolio" className={styles.portfolioContent}>
+        <div className={styles.portfolioTextContent}>
+          <h1 className={moramit.className}>My portfolio</h1>
+          <p>
+            A collection of all my projects created for myself or for real
+            businesses.
+          </p>
         </div>
         <div className={styles.projects}>
           <Project
@@ -62,7 +55,7 @@ const Portfolio = () => {
             carouselImages={[OISHII_1, OISHII_2, OISHII_3, OISHII_4, OISHII_5]}
             link="https://oishii-ten.vercel.app"
             date={new Date(2023, 12, 8).toDateString()}
-            title="Oishii restaurant website (fake)"
+            title="Oishii website (fake)"
             time="School hours"
             client="Peter De Clercq"
             mainTech={{
@@ -103,7 +96,7 @@ const Portfolio = () => {
             carouselImages={[WEV_1, WEV_2, WEV_3, WEV_4]}
             link="/"
             date={new Date(2023, 12, 8).toDateString()}
-            title="WoonExpertVlaanderen - EPC/Asbestos certificate application"
+            title="My.WoonExpertVlaanderen"
             time="2 months"
             client="WoonExpertVlaanderen"
             mainTech={{
@@ -136,8 +129,9 @@ const Portfolio = () => {
             designedBy="Peter De Clercq"
           />
         </div>
-      </article>
-    </div>
+      </div>
+
+    </article>
   );
 };
 

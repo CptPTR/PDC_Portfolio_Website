@@ -1,20 +1,24 @@
+"use client"
+
 import styles from "@/styles/Navigation.module.css";
-import { Livvic } from "next/font/google";
+import { Dispatch, FC, SetStateAction } from "react";
 
-const livvic500 = Livvic({
-  subsets: ["latin"],
-  weight: "500",
-});
+type NavigationProps = {
+  setMobileMenuOpen?: Dispatch<SetStateAction<boolean>>
+}
 
-const Navigation = () => {
+const Navigation: FC<NavigationProps> = ({ setMobileMenuOpen }) => {
+  const handleClick = () => {
+    if (setMobileMenuOpen) {
+      setMobileMenuOpen(false)
+    }
+  }
   return (
-    <nav className={styles.navigation + " " + livvic500.className}>
-      <ul>
-        <a href="#aboutme">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#form">Contact</a>
-      </ul>
+    <nav className={styles.navigation}>
+      <a onClick={handleClick} className={styles.link} href="#aboutme">About</a>
+      <a onClick={handleClick} className={styles.link} href="#experience">Experience</a>
+      <a onClick={handleClick} className={styles.link} href="#portfolio">Portfolio</a>
+      <a onClick={handleClick} className={styles.link} href="#form">Contact</a>
     </nav>
   );
 };

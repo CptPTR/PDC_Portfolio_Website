@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Divider from "@/components/Divider";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";
@@ -17,14 +18,16 @@ const livvic400 = Livvic({
 export default function Home() {
   return (
     <>
-      <main className={styles.main + " " + livvic400.className}>
+      <Header />
+      <main className={livvic400.className}>
         <div className={styles.mainWrapper}>
-          <Header />
           <Hero />
           <AboutMe />
+          <Divider />
           <Experiences />
           <Portfolio />
           <TechStack />
+          <Divider />
           <Form />
           <Footer />
         </div>

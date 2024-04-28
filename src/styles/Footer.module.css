@@ -1,28 +1,24 @@
 .footer {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
-  padding: 60px;
 }
 
 .footer p {
-  font-size: 13px;
+  text-align: center;
+  font-size: 0.6rem;
 }
 
 .socialMedia {
   display: flex;
   align-items: center;
-  margin-top: 12px;
-  margin-bottom: 30px;
+  gap: 0.5rem;
 }
 
-@media screen and (max-width: 426px) {
-  .footer {
-    padding-inline: 0;
-  }
-
-  .footer p {
-    padding-inline: 50px;
-    text-align: center;
-  }
+.bottom {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
+
+

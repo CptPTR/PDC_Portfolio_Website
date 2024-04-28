@@ -1,75 +1,75 @@
 .bg {
+  display: none;
   z-index: -3;
   position: absolute;
-  top: -50px;
-  left: -650px;
-  height: 1400px;
-  width: 990px;
+  top: -200px;
+  left: -500px;
 }
 
-.aboutmeWrapper {
-  height: calc(100dvh - 60px);
+.bg img {
+  height: 1200px;
+  width: 900px;
+}
+
+.aboutMeWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.aboutmeContent {
-  position: relative;
-  width: 970px;
+.aboutMeContent {
+  max-width: 500px;
   margin: 0 auto;
+  position: relative;
+  padding-block: 5rem;
+}
+
+.aboutMeTextContent {
+  padding-inline: 2rem;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.aboutmeTextContent {
-  width: 385px;
+.aboutMeTextContent h1 {
+  font-size: 2rem;
 }
 
-.aboutmeTextContent h1 {
-  margin-top: 17px;
-  margin-bottom: 14px;
-  font-size: 60px;
-}
-
-.aboutmeTextContent div p {
+.aboutMeTextContent div p {
   line-height: 24px;
 }
 
-.aboutmeTextContent div:last-of-type {
-  height: 216px;
-}
-
-.image {
-  width: 420px;
-  height: 420px;
+.imageWrapper {
+  flex: 1;
+  display: none;
+  padding: 3rem;
   background-color: #fff;
   border-radius: 18px;
-  box-shadow: -40px 2px 80px #00000080;
-  padding: 50px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .tabs {
   display: flex;
+  gap: 1rem;
   list-style: none;
-  margin-bottom: 32px;
 }
 
 .tabs li {
-  margin-right: 50px;
-  padding: 10px 0;
+  padding-bottom: 0.5rem;
 }
 
 .tabs li:hover {
   cursor: pointer;
 }
 
-.preTitle {
-  font-size: 18px;
-}
-
 .text {
-  font-size: 15px;
+  min-height: 250px;
 }
 
 .buttonWrapper a {
@@ -80,56 +80,32 @@
 
 .button {
   padding: 15px 32px;
-  margin-top: 22px;
   font-size: 16px;
-  background-color: #3b43f2;
+  background-color: lightseagreen;
   color: #fff;
   border-radius: 50px;
   border: none;
   cursor: pointer;
 }
 
-@media screen and (max-width: 426px) {
-  .aboutmeWrapper {
-    height: auto;
+@media screen and (min-width: 1366px) {
+  .bg {
+    display: flex;
   }
 
-  .bg img {
-    display: none;
+  .aboutMeContent {
+    max-width: 950px;
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .aboutmeContent {
-    flex-direction: column;
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-  }
-
-  .aboutmeTextContent {
-    width: 100%;
-    padding: 0 50px;
-  }
-
-  .aboutmeTextContent h1 {
-    font-size: 44px;
-  }
-
-  .image {
-    width: 275px;
-    height: 275px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  .image img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .tabs li {
-    margin-right: 30px;
-  }
-
-  .aboutmeTextContent div:last-of-type {
-    height: auto;
+    min-width: 350px;
+    min-height: 350px;
   }
 }

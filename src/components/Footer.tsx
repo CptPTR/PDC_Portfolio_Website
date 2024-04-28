@@ -1,18 +1,13 @@
 import styles from "@/styles/Footer.module.css";
-import { Livvic } from "next/font/google";
 import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
 import Navigation from "./Navigation";
 import SocialMediaLink from "./SocialMediaLink";
-
-const livvic400 = Livvic({
-  subsets: ["latin"],
-  weight: "400",
-});
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Navigation />
+
       <div className={styles.socialMedia}>
         <SocialMediaLink
           id="instagram"
@@ -30,10 +25,18 @@ const Footer = () => {
           image={<BiLogoLinkedin />}
         />
       </div>
-      <p className={livvic400.className + " " + styles.bottomtext}>
-        Developed by myself. Designed by my brother. &copy; pdc 2023. All rights
-        reserved
-      </p>
+
+      <div className={styles.bottom}>
+        <p>
+          Developed by myself.
+        </p>
+        <p>
+          Designed by my brother.
+        </p>
+        <p>
+          &copy; pdc 2023. All rights reserved
+        </p>
+      </div>
     </footer>
   );
 };

@@ -9,10 +9,11 @@ html {
 }
 
 header {
-  background: #fff;
+  padding-inline: 2rem;
+  background-color: #fff;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -22,6 +23,7 @@ main {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
+  position: relative;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }

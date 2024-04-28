@@ -7,10 +7,9 @@ import { Livvic } from "next/font/google";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
+import { MdClose, MdMenu } from "react-icons/md";
 import Navigation from "./Navigation";
 import SocialMediaLink from "./SocialMediaLink";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose, MdMenu } from "react-icons/md";
 
 const livvic500 = Livvic({
   subsets: ["latin"],
@@ -46,29 +45,10 @@ const Header = () => {
 
   return (
     <header id="header" className={livvic500.className}>
-      <motion.div
-        className={styles.progressBar}
-        style={{
-          scaleX: scrollYProgress,
-          position: "absolute",
-          top: headerHeight,
-        }}
-      />
       <div
         className={styles.headerWrapper}
         style={{ height: `${headerHeight}px` }}
       >
-        <div className={styles.mobile}>
-          <a href="#">
-            <div className={styles.logo}>
-              <Image
-                src={Logo}
-                alt="Logo pdc"
-                height={scrollDirection === "up" ? 60 : 30}
-              />
-            </div>
-          </a>
-        </div>
         <div className={styles.logoNav}>
           <a href="#">
             <div className={styles.logo}>
@@ -79,32 +59,37 @@ const Header = () => {
               />
             </div>
           </a>
-          {scrollDirection === "up" && <Navigation />}
-        </div>
-        {scrollDirection === "up" && (
-          <div className={styles.socialMedia}>
-            <SocialMediaLink
-              id="instagram"
-              link="https://www.instagram.com/pdc_2201/"
-              image={<BiLogoInstagram />}
-            />
-            <SocialMediaLink
-              id="github"
-              link="https://github.com/CptPTR"
-              image={<BiLogoGithub />}
-            />
-            <SocialMediaLink
-              id="linkedin"
-              link="https://www.linkedin.com/in/peter-de-clercq-888023206/"
-              image={<BiLogoLinkedin />}
-            />
+          <div className={styles.desktop}>
+            {scrollDirection === "up" && <Navigation />}
           </div>
-        )}
-        <div className={styles.mobile}>
+          <div className={styles.desktop}>
+            {scrollDirection === "up" && (
+              <div className={styles.socialMedia}>
+                <SocialMediaLink
+                  id="instagram"
+                  link="https://www.instagram.com/pdc_2201/"
+                  image={<BiLogoInstagram />}
+                />
+                <SocialMediaLink
+                  id="github"
+                  link="https://github.com/CptPTR"
+                  image={<BiLogoGithub />}
+                />
+                <SocialMediaLink
+                  id="linkedin"
+                  link="https://www.linkedin.com/in/peter-de-clercq-888023206/"
+                  image={<BiLogoLinkedin />}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div className={styles.hamburgerMenu}>
           {isMobileMenuOpen ? (
-            <MdClose size={24} fill="#3b43f2" onClick={handleMenuToggle} />
+            <MdClose size={24} fill="lightseagreen" onClick={handleMenuToggle} />
           ) : (
-            <MdMenu size={24} fill="#3b43f2" onClick={handleMenuToggle} />
+            <MdMenu size={24} fill="lightseagreen" onClick={handleMenuToggle} />
           )}
         </div>
         {isMobileMenuOpen ? (
@@ -112,7 +97,7 @@ const Header = () => {
             className={styles.navMenuMobile}
             style={{ top: `${headerHeight}px` }}
           >
-            <Navigation />
+            <Navigation setMobileMenuOpen={setMobileMenuOpen} />
             <div className={styles.socialMedia}>
               <SocialMediaLink
                 id="instagram"
@@ -133,6 +118,14 @@ const Header = () => {
           </div>
         ) : null}
       </div>
+      <motion.div
+        className={styles.progressBar}
+        style={{
+          scaleX: scrollYProgress,
+          position: "absolute",
+          top: headerHeight,
+        }}
+      />
     </header>
   );
 };

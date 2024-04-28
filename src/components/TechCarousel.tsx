@@ -31,28 +31,28 @@ const TechCarousel = () => {
     >
       <div className={styles.container}>
         <div className={styles.slide}>
-          <Image src={Logo_NextJS} alt="NextJS logo" width={100} />
+          <Image src={Logo_NextJS} alt="NextJS logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_React} alt="ReactJS logo" width={100} />
+          <Image src={Logo_React} alt="ReactJS logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_Vue} alt="VueJS logo" width={100} />
+          <Image src={Logo_Vue} alt="VueJS logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_TypeScript} alt="TypeScript logo" width={100} />
+          <Image src={Logo_TypeScript} alt="TypeScript logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_ChakraUI} alt="ChakraUI logo" width={100} />
+          <Image src={Logo_ChakraUI} alt="ChakraUI logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_MUI} alt="MaterialUI logo" width={100} />
+          <Image src={Logo_MUI} alt="MaterialUI logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_Vite} alt="Vite logo" width={100} />
+          <Image src={Logo_Vite} alt="Vite logo" height={50} />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_GraphQL} alt="GraphQL logo" width={100} />
+          <Image src={Logo_GraphQL} alt="GraphQL logo" height={50} />
         </div>
       </div>
     </motion.div>
