@@ -49,7 +49,7 @@ const experiences: {
       business: "WoonExpertVlaanderen",
       as: "Developer",
       description:
-        "At WoonExpertVlaanderen, I took the lead in designing and developing the frontend of a comprehensive business application. While the backend was powered by Supabase, my focus on the frontend allowed me to create a seamless user experience and interface. This project highlighted my expertise in frontend development and collaboration with backend technologies like Supabase.",
+        "At WoonExpertVlaanderen, I took the lead in designing and developing the frontend of a comprehensive business web application. While the backend was powered by Supabase, my focus on the frontend allowed me to create a seamless user experience and interface. This project highlighted my expertise in frontend development and collaboration with backend technologies like Supabase.",
       logo: WEV_Logo,
     },
   ];

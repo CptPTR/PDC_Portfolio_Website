@@ -27,10 +27,9 @@
 }
 
 .businesses {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: space-between;
   padding-inline: 1rem;
 }
@@ -56,6 +55,10 @@
   margin-bottom: 24px;
 }
 
+.experience p {
+  text-align: justify;
+}
+
 @media screen and (min-width: 1366px) {
   .experiencesContent {
     max-width: 950px;
@@ -73,6 +76,7 @@
 
   .businesses {
     flex-direction: row;
+    padding-inline: 0;
   }
 
   .experience {
