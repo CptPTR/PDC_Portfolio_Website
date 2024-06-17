@@ -8,6 +8,7 @@ import Logo_Vue from "@/assets/icons/vue.svg";
 import Logo_MUI from "@/assets/icons/mui.svg";
 import Logo_Vite from "@/assets/icons/vite.svg";
 import Logo_GraphQL from "@/assets/icons/graphql.svg";
+import Logo_TailwindCSS from "@/assets/icons/tailwindcss.png";
 import styles from "@/styles/TechCarousel.module.css";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
@@ -31,28 +32,31 @@ const TechCarousel = () => {
     >
       <div className={styles.container}>
         <div className={styles.slide}>
-          <Image src={Logo_NextJS} alt="NextJS logo" height={50} />
+          <Image src={Logo_NextJS} alt="Next.js logo" height={50} title="Next.js" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_React} alt="ReactJS logo" height={50} />
+          <Image src={Logo_React} alt="React logo" height={50} title="React" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_Vue} alt="VueJS logo" height={50} />
+          <Image src={Logo_Vue} alt="Vue.js logo" height={50} title="Vue.js" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_TypeScript} alt="TypeScript logo" height={50} />
+          <Image src={Logo_TailwindCSS} alt="TailwindCSS logo" width={50} title="TailwindCSS" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_ChakraUI} alt="ChakraUI logo" height={50} />
+          <Image src={Logo_TypeScript} alt="TypeScript logo" height={50} title="TypeScript" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_MUI} alt="MaterialUI logo" height={50} />
+          <Image src={Logo_ChakraUI} alt="ChakraUI logo" height={50} title="ChakraUI" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_Vite} alt="Vite logo" height={50} />
+          <Image src={Logo_MUI} alt="MaterialUI logo" height={50} title="MaterialUI" />
         </div>
         <div className={styles.slide}>
-          <Image src={Logo_GraphQL} alt="GraphQL logo" height={50} />
+          <Image src={Logo_Vite} alt="Vite logo" height={50} title="Vite" />
+        </div>
+        <div className={styles.slide}>
+          <Image src={Logo_GraphQL} alt="GraphQL logo" height={50} title="GraphQL" />
         </div>
       </div>
     </motion.div>
