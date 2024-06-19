@@ -8,6 +8,8 @@ import Logo_Vue from "@/assets/icons/vue.svg";
 import Logo_MUI from "@/assets/icons/mui.svg";
 import Logo_Vite from "@/assets/icons/vite.svg";
 import Logo_GraphQL from "@/assets/icons/graphql.svg";
+import Logo_Pinia from "@/assets/icons/pinia.svg";
+import Logo_PrimeVue from "@/assets/icons/primevue.svg";
 import Logo_TailwindCSS from "@/assets/icons/tailwindcss.png";
 import styles from "@/styles/TechCarousel.module.css";
 import Autoplay from "embla-carousel-autoplay";
@@ -39,6 +41,12 @@ const TechCarousel = () => {
         </div>
         <div className={styles.slide}>
           <Image src={Logo_Vue} alt="Vue.js logo" height={50} title="Vue.js" />
+        </div>
+        <div className={styles.slide}>
+          <Image src={Logo_Pinia} alt="Pinia logo" height={50} title="Pinia" />
+        </div>
+        <div className={styles.slide}>
+          <Image src={Logo_PrimeVue} alt="PrimeVue logo" height={50} title="PrimeVue" />
         </div>
         <div className={styles.slide}>
           <Image src={Logo_TailwindCSS} alt="TailwindCSS logo" width={50} title="TailwindCSS" />
