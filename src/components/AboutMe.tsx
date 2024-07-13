@@ -120,7 +120,7 @@ const AboutMe = () => {
                         transition={{ delay: 1, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >
-                        <motion.a className={styles.button} whileHover={{ scale: 1.1 }} href="https://drive.google.com/uc?export=download&id=1EpLH4cAd3j-wl9XnDA11SMuBP2A4lKNq">
+                        <motion.a className={styles.button} whileHover={{ scale: 1.1 }} href="https://drive.google.com/uc?export=download&id=1dVAIhJ5vMzGcO1Fhl8CDslC4rDJfSIMZ">
                             Download CV
                         </motion.a>
                     </motion.div>
